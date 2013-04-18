@@ -1,4 +1,4 @@
-.welcome, /*.gameHome, */.chooseTan, .skinExam, .removeMole, .fameStatus,
+.welcome, /*.gameHome,*/ .chooseTan, .skinExam, .removeMole, .fameStatus,
 .castingCall, .failedCastingCall, .makeProgress, /*.gameHeader,*/ .final {
 	display:none;
 }
@@ -519,7 +519,7 @@ body {
 	header h1 {
 		font-size: 2.2em;
 		line-height: 1;
-		width: 48.46625767%%; /*474/978*/
+		width: 48.46625767%; /*474/978*/
 		float: left;
 	}
 
@@ -625,7 +625,7 @@ body {
 		margin-left: 2%;
 		/*need to position this unless we wrap the progress bars in another div*/
 		position: relative;
-		top: -320px;
+		top: -500px;
 	}
 
 	.gameHome footer img {
@@ -659,15 +659,17 @@ body {
 		padding: 10px 0;
 /*		text-align: center;*/
 		font-size: 1.3em;
-		width: 74%;
+		width: 60%;
 		margin: 3% auto;
 		line-height: 1.5;
+		float: left;
 	}
 	
 	article.activity img {
-		width: 48%;
-		margin: 0 auto;
+		width: 34%;
+/*		margin: 0 auto;*/
 		display: block;
+		float: left;
 	}
 	/******************* END - makeProgress SCREEN *******************/
 
@@ -691,11 +693,12 @@ body {
 
 /* End Media Query - min-width: 768px; orientation: landscape;
 -----------------------------------------------------------------------------*/
-
-
+/*****************************************************************************/
+/*****************************************************************************/
+/*****************************************************************************/
 
 /* Start Media Query - max-width: 200px; // trying to fix text issue on small
-viewport like Crappy Android on Responsinator
+viewport like Crappy Android on Responsinator but doesn't seem to work
 -----------------------------------------------------------------------------*/
 @media only screen and (max-width: 200px) {
 
@@ -712,3 +715,219 @@ viewport like Crappy Android on Responsinator
 	}
 
 }
+
+/* End Media Query - max-width: 200px;
+-----------------------------------------------------------------------------*/	
+/*****************************************************************************/
+/*****************************************************************************/
+/*****************************************************************************/
+
+/* Start Media Query - max-width: 768px; orientation: landscape;
+-----------------------------------------------------------------------------*/
+
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+
+	body {
+		font-size: 12px;
+		font-family: Helvetica, Arial, sans-serif;
+	}
+
+	header, #middle, footer {
+			box-sizing: border-box;
+			padding: 3.75%; /*	12/320 */
+			width: 100%;
+		}
+
+
+	header { 
+		height: 100px;
+	}
+
+	header img {
+		width: 22.69938650%; /*	222/978 */
+		max-width: 222px;
+		float: left;
+		margin-right: 3.067484%; /*30/978*/
+		display:block;
+		margin-bottom: 5%;
+	}
+
+	header h1 {
+		font-size: 1.6em;
+/*		line-height: 1;*/
+/*		width: 48.46625767%; */
+		width: 74%;
+		float: left;
+	}
+
+	header h1 span {
+		font-size: 2.7em;
+		font-weight: bold;
+		display: block;
+		line-height: 1.3;
+	}
+
+	#content {
+		width: 100%;
+		padding: 0;
+		max-width: 1002px;
+	}
+
+
+	/******************* START - welcome SCREEN *******************/
+
+	#enterName .field {
+		float: left;
+		display: block;
+		width: 61%; /*183/300*/
+		margin-right: 3.067484%; /*30/978*/
+		height: 30px;
+		max-width: 400px;
+	} 
+
+	#enterName .button {
+		float: left;
+		display: block;
+		width: 33%;
+		height: 100%;
+		vertical-align: bottom;
+		max-width: 300px;
+	} 
+
+	.welcome p {
+		font-size: 1.2em;
+		line-height: 1.5;
+		max-width: 474px;
+	}
+	/******************* END - welcome SCREEN *******************/
+
+/******************* START - gameHome SCREEN *******************/
+
+	.gameHome h1 {
+		font-size: 16px;
+		margin-bottom: 10px; 
+	}
+
+	section#gameHome{
+		width: 100%;
+	}
+
+	article.progress {
+		display: table;
+		clear: both;
+		margin: 1% 0;
+		width: 70%;
+		float: left;
+	}
+
+	article.progress img {
+		width: 30%;
+		margin-right: 4%;
+		display: block;
+		float: left;
+	}
+
+	article.progress div.bar {
+		width: 66%;
+		height: 80%;
+		display: inline-block;
+		background-color: #FFF;
+	}
+
+	div.bar .amount {
+		width: 100%;
+		display: inline-block;
+		height: 100%;
+	}
+
+	div.bar.fitness .amount {
+		background-color: #5E97C9;
+	}
+
+	div.bar.tan .amount {
+		background-color: #ffdc17;
+	}
+	
+	div.bar.style .amount {
+		background-color: #BF4068;
+	}
+
+	.gameHome footer {
+		float: left;
+		padding: 0;
+		width: 28%;
+		margin-left: 2%;
+		/*need to position this unless we wrap the progress bars in another div*/
+		position: relative;
+		top: -320px;
+	}
+
+	.gameHome footer img {
+		width: 97%;
+		margin: 0 0 0 3%;
+		display: block;
+		padding-top: 10%;
+	}
+
+	.gameHome footer img:first-of-type {
+		margin-left: 0;
+	}	
+
+	 /*position is to move the last image, LOGO, to the top */
+	.gameHome footer img.logo {
+	
+/*		position: absolute;
+		top: -200px;
+		z-index: 1000;*/
+	}	
+
+	/******************* END - gameHome SCREEN *******************/
+
+	/******************* START - makeProgress SCREEN *******************/
+
+	article.activity {
+		clear: both;
+		width: 100%;
+	}
+
+	article.activity p {
+		padding: 10px 0;
+/*		text-align: center;*/
+		font-size: 1.3em;
+		width: 60%;
+		margin: 3% auto;
+		line-height: 1.5;
+		float: left;
+	}
+	
+	article.activity img {
+		width: 34%;
+/*		margin: 0 auto;*/
+		display: block;
+		float: left;
+	}
+	/******************* END - makeProgress SCREEN *******************/
+
+	/******************* START - chooseTan/Skin Exam SCREEN *******************/
+
+	article.activity input {
+		width: 74%;
+		clear: both;
+		margin: 2% auto;
+		display: block;
+		height: 20px;
+	}
+
+	#content h2 {
+		font-size: 1.6em;
+		margin-top: 5%;
+	}
+
+} 
+
+
+/* End Media Query - max-width: 768px; orientation: landscape;
+-----------------------------------------------------------------------------*/
+
+
