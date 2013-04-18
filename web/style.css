@@ -194,9 +194,8 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 }
 
-.welcome,
-/*.gameHome */
-.makeProgress /*.gameHeader*/ {
+.welcome, .gameHome, .chooseTan, .skinExam, .removeMole, .fameStatus,
+.castingCall, .failedCastingCall, .makeProgress /*.gameHeader*/ {
 	display:none;
 }
 
@@ -384,7 +383,7 @@ header h1 {
 		clear: both;
 		padding: 0;
 		position: fixed;
-		bottom: 0;
+		bottom: -8%;
 		left: 3.333333333%;
 		height: 25%;
 		overflow: hidden;
@@ -416,10 +415,10 @@ header h1 {
 
 	article.activity p {
 		padding: 10px 0;
-		text-align: center;
+/*		text-align: center;*/
 		font-size: 1.3em;
-		width: 61%;
-		margin: 0 auto;
+		width: 74%;
+		margin: 3% auto;
 		line-height: 1.5;
 	}
 	
@@ -429,6 +428,22 @@ header h1 {
 		display: block;
 	}
 	/******************* END - makeProgress SCREEN *******************/
+
+	/******************* START - chooseTan/Skin Exam SCREEN *******************/
+
+	article.activity input {
+		width: 74%;
+		clear: both;
+		margin: 2% auto;
+		display: block;
+		height: 20px;
+	}
+
+	#content h2 {
+		font-size: 1.6em;
+		margin-top: 5%;
+	}
+
 } 
 
 /* End Media Query - max-width: 480px;
