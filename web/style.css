@@ -194,7 +194,9 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 }
 
-.welcome, /*.makeProgress*/ .gameHome /*.gameHeader */{
+.welcome,
+/*.gameHome */
+.makeProgress /*.gameHeader*/ {
 	display:none;
 }
 
@@ -304,7 +306,7 @@ header h1 {
 	}
 
 	header h1 span {
-		font-size: 2.2em;
+		font-size: 2em;
 		font-weight: bold;
 		display: block;
 		line-height: 1.4;
@@ -341,9 +343,9 @@ header h1 {
 	/******************* START - gameHome SCREEN *******************/
 
 	article.progress {
-		display: block;
+		display: table;
 		clear: both;
-		margin: 5px 0;
+		margin: 8% 0 5%;
 	}
 
 	article.progress img {
@@ -355,21 +357,27 @@ header h1 {
 
 	article.progress div.bar {
 		width: 74%;
-		height: 30px;
-		display: block;
-		float: left;
+		height: 100%;
+		display: inline-block;
+		background-color: #FFF;
 	}
 
-	div.bar.fitness {
-		background-color: blue;
+	div.bar .amount {
+		width: 25%;
+		display: inline-block;
+		height: 100%;
 	}
 
-	div.bar.tan {
-		background-color: yellow;
+	div.bar.fitness .amount {
+		background-color: #5E97C9;
+	}
+
+	div.bar.tan .amount {
+		background-color: #ffdc17;
 	}
 	
-	div.bar.style {
-		background-color: red;
+	div.bar.style .amount {
+		background-color: #BF4068;
 	}
 
 	.gameHome footer {
@@ -410,12 +418,13 @@ header h1 {
 		padding: 10px 0;
 		text-align: center;
 		font-size: 1.3em;
-
-
+		width: 61%;
+		margin: 0 auto;
+		line-height: 1.5;
 	}
 	
 	article.activity img {
-		width: 74%;
+		width: 48%;
 		margin: 0 auto;
 		display: block;
 	}
