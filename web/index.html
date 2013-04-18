@@ -17,9 +17,14 @@
 
 <div id="wrapper">
 
-	<header id="header">
+	<header class="welcome">
 		<img src="logo.png" alt="Vanity logo" title="Vanity the game" />
 		<h1>Are you dying to look good?</h1>
+	</header><!-- #header-->
+
+	<header class="gameHeader">
+		<img src="listStatus.png" alt="player's status" title="player's status" />
+		<h1>Name, you've got <span id="daysLeft">120 Days</span> to get famous!</h1>
 	</header><!-- #header-->
 
 	<section id="middle">
@@ -27,18 +32,56 @@
 		<div id="container">
 			<div id="content">
 				
-				<div id="welcome"> <!-- welcome screen -->
-<p>Welcome to the glitzy world of VANITY!</p>
-<p>You may just be a nobody actor trying to make it to the big time right now, but the future is yours to decide. The road is a long one: You’ll need to go to casting calls to land some gigs and earn bigger and bigger roles to build up you reputation in Hollywood and reach Superstardom! But to get those gigs, you’ll need to put in some hard work! You’ll need to maintain your <em>FITNESS</em> at the gym, make sure you’re sufficiently <em>TAN</em> to appear healthy, and always be mindful of your <em>STYLE</em>.
-FITNESS, TAN, and STYLE- Just keep these 3 things in mind, and you’ll own the silver screen in no time!
-</p>
+				<section class="welcome"> <!-- welcome screen -->
+					<p>Welcome to the glitzy world of VANITY!</p>
+					<p>You may just be a nobody actor trying to make it to the big time right now, but the future is yours to decide. The road is a long one: You’ll need to go to casting calls to land some gigs and earn bigger and bigger roles to build up you reputation in Hollywood and reach Superstardom! But to get those gigs, you’ll need to put in some hard work! You’ll need to maintain your <em>FITNESS</em> at the gym, make sure you’re sufficiently <em>TAN</em> to appear healthy, and always be mindful of your <em>STYLE</em>.
+					FITNESS, TAN, and STYLE- Just keep these 3 things in mind, and you’ll own the silver screen in no time!
+					</p>
 					<p>First things first, what's your name?</p>
 
 					<div id="enterName">
 						<input class="field" type="text" name="playerName" />
 						<input class="button" type="submit" name="submitPlayerName" value="PLAY" />
 					</div>	
-				</div>	
+				</section>	
+
+				<section class="gameHome">
+
+					<article class="progress">
+						<img src="fitness.png" alt="fitness" title="fitness" />
+						<div class="bar fitness"></div>
+					</article>	
+
+					<article class="progress">
+						<img src="tan.png" alt="tan" title="tan" />
+						<div class="bar tan"></div>
+					</article>	
+
+					<article class="progress">
+						<img src="style.png" alt="style" title="style" />
+						<div class="bar style"></div>
+					</article>	
+
+					<footer>
+						<a href="#"><img src="doctor.png" alt="doctor" title="doctor" /></a>
+						<a href="#"><img src="castingCall.png" alt="casting call" title="casting call" /></a>
+						<a href="#"><img src="logo.png" alt="Vanity logo" title="Vanity the game" /></a>
+					</footer>
+				</section>
+
+				<section class="makeProgress">
+					<article class="progress">
+						<img src="fitness.png" alt="fitness" title="fitness" />
+						<div class="bar fitness"></div>
+						<!-- need something to show increase, like animated arrow elongating -->
+					</article>	
+
+					<article class="activity">
+						<p class="activityDesc">You did some serious reps in the gym!</p>
+
+						<img src="activity.png" alt="activity" title="activity" />
+					</article>	
+				</section>	
 
 			</div><!-- #content-->
 		</div><!-- #container-->
